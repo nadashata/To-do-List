@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Local Storage Tutorial</title>
+	<style>
+		body{
+			margin:100px auto;
+			text-align: center;
+		}
+		#tdl-list,#done-list{
+			border:1px solid #009688;
+			border-radius:2px;
+			width:30%;
+			color:#009688;
+			text-align: left;
+			padding:10px;
+		}
+		div{
+			margin:20px auto;
+		}
+		.remove{
+			float: right;
+			color:red;
+		}
+	</style>
+	
+</head>
+<body>
+	<div id="tdl">
+		<div id="tdl-header">
+			<h2>To Do List</h2>
+			<input type="text" id = 'new-task' placeholder="Enter new task">
+			<button id="add-task">add</button>
+			<button id="clear-all-button">Clear All</button>
+		</div>
+		<div id="tdl-list">
+				<h3 style="text-align:center;">Pening Tasks</h3>
+				<h3 style="text-align:center;">-----------------</h3>
+				<ul style="list-style-type: none;" id="my-list"></ul>
+		</div>
+		<div id="done-list">
+				<h3 style="text-align:center;">Completed Tasks</h3>
+				<h3 style="text-align:center;">-------------------</h3>
+				<ul style="list-style-type: none;" id="my-done-list"></ul>
+		</div>
+	</div>
+	<script src="js/to-do-list1.js"></script>
+</body>
+
+</html>
